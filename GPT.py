@@ -1,7 +1,8 @@
 import streamlit as st
 import openai
 
-openai.api_key = "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"
+#openai.api_key = "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"
+openai.api_key = st.text_input("API")
 
 st.title("What's UP!?")
 
