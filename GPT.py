@@ -2,8 +2,6 @@ import streamlit as st
 import openai
 import os
 
-openai.api_key = "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"
-
 # APIキーを環境変数から取得する
 API_KEY = os.getenv("OPENAI_API_KEY")
 
