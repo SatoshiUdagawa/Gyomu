@@ -4,6 +4,17 @@ import os
 
 openai.api_key = "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"
 
+# APIキーを環境変数から取得する
+API_KEY = os.getenv("OPENAI_API_KEY")
+
+# APIキーが環境変数に設定されていない場合はエラーを表示する
+if not API_KEY:
+    st.error("APIキーが設定されていません。環境変数 OPENAI_API_KEY を設定してください。")
+    st.stop()
+
+# OpenAI APIに接続する
+openai.api_key = API_KEY
+
 st.title("What's UP!?")
 
 messages = []
