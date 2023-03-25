@@ -6,7 +6,7 @@ openai.api_key = "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"
 st.title("What's UP!?")
 
 messages = []
-path_w = '/content/業務記述書.txt'
+path_w = '業務記述書.txt'
 def ai_response(user_input):
   f = open(path_w, 'r', encoding='UTF-8')
   text = f.read()
