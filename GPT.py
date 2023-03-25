@@ -2,10 +2,7 @@ import streamlit as st
 import openai
 import os
 
-#openai.api_key = "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"
-
-os.environ["OPENAI_API_KEY"] = "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"
-
+openai.api_key = "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"
 
 st.title("What's UP!?")
 
