@@ -2,7 +2,9 @@ import streamlit as st
 import openai
 import os
 
-CHATGPT_API_KEY = os.environ["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"]
+#"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"
+
+CHATGPT_API_KEY = os.environ["CHATGPT_API_KEY"]
 openai.api_key = CHATGPT_API_KEY
 
 st.title("What's UP!?")
