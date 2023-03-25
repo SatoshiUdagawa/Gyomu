@@ -4,8 +4,7 @@ import os
 
 #"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"
 
-CHATGPT_API_KEY = os.environ["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"]
-openai.api_key = CHATGPT_API_KEY
+openai.api_key = "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"
 
 st.title("What's UP!?")
 
