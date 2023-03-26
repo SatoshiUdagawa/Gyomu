@@ -41,7 +41,6 @@ def postscript():
   with open(path_w, mode='a', encoding='UTF-8') as f:
     f.write("\n" + user_input.replace("追記：",""))
   
-
 with st.form(key = "profile_form"):
   user_input = st.text_input("質問")
   submitted = st.form_submit_button("送信")
